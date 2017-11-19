@@ -32,22 +32,22 @@
 28 tBodyGyroJerk.std...X - Standard deviation of body component of rate of change of angular acceleration (gravity removed) in the X-direction.  
 29 tBodyGyroJerk.std...Y - Standard deviation of body component of rate of change of angular acceleration (gravity removed) in the Y-direction.  
 30 tBodyGyroJerk.std...Z - Standard deviation of body component of rate of change of angular acceleration (gravity removed) in the Z-direction.  
-31 tBodyAccMag.mean.. - Mean of Euclidean norm of body component of linear acceleration (gravity removed). 
-32 tBodyAccMag.std.. - Standard deviation of Euclidean norm of body component of linear acceleration (gravity removed). 
-33 tGravityAccMag.mean.. - Mean of Euclidean norm of gravity component of linear acceleration. 
-34 tGravityAccMag.std.. - Standard deviation of Euclidean norm of gravity component of linear acceleration. 
-35 tBodyAccJerkMag.mean.. - Mean of Euclidean norm of body component of rate of change of linear acceleration (gravity removed). 
-36 tBodyAccJerkMag.std.. - Standard deviation of Euclidean norm of body component of rate of change of linear acceleration (gravity removed). 
-37 tBodyGyroMag.mean.. - Mean of Euclidean norm of body component of angular acceleration (gravity removed). 
-38 tBodyGyroMag.std.. - Standard deviation of Euclidean norm of body component of angular acceleration (gravity removed). 
-39 tBodyGyroJerkMag.mean.. - Mean of Euclidean norm of body component of rate of change of angular acceleration (gravity removed). 
+31 tBodyAccMag.mean.. - Mean of Euclidean norm of body component of linear acceleration (gravity removed).  
+32 tBodyAccMag.std.. - Standard deviation of Euclidean norm of body component of linear acceleration (gravity removed).  
+33 tGravityAccMag.mean.. - Mean of Euclidean norm of gravity component of linear acceleration.  
+34 tGravityAccMag.std.. - Standard deviation of Euclidean norm of gravity component of linear acceleration.  
+35 tBodyAccJerkMag.mean.. - Mean of Euclidean norm of body component of rate of change of linear acceleration (gravity removed).  
+36 tBodyAccJerkMag.std.. - Standard deviation of Euclidean norm of body component of rate of change of linear acceleration (gravity removed).  
+37 tBodyGyroMag.mean.. - Mean of Euclidean norm of body component of angular acceleration (gravity removed).  
+38 tBodyGyroMag.std.. - Standard deviation of Euclidean norm of body component of angular acceleration (gravity removed).  
+39 tBodyGyroJerkMag.mean.. - Mean of Euclidean norm of body component of rate of change of angular acceleration (gravity removed).  
 40 tBodyGyroJerkMag.std.. - Standard deviation of Euclidean norm of body component of rate of change of angular acceleration (gravity removed). 
 
 #### Frequency Domain
 ##### The following columns contain data in the frequency domain. Each has a corresponding column in the time domain, to which a Fast Fourier transform was applied to derive the frequency domain values.
 41 fBodyAcc.mean...X - Mean of body component of linear acceleration (gravity removed) in the X-direction.  
 42 fBodyAcc.mean...Y - Mean of body component of linear acceleration (gravity removed) in the Y-direction.  
-43 fBodyAcc.mean...Z - Mean of body component of linear acceleration (gravity removed) in the Z-direction. 
+43 fBodyAcc.mean...Z - Mean of body component of linear acceleration (gravity removed) in the Z-direction.  
 44 fBodyAcc.std...X - Standard deviation of body component of linear acceleration (gravity removed) in the X-direction.  
 45 fBodyAcc.std...Y - Standard deviation of body component of linear acceleration (gravity removed) in the Y-direction.  
 46 fBodyAcc.std...Z - Standard deviation of body component of linear acceleration (gravity removed) in the Z-direction.  
@@ -72,24 +72,24 @@
 65 fBodyGyro.meanFreq...X - Weighted average of the frequency components to obtain fBodyGyro.mean...X.  
 66 fBodyGyro.meanFreq...Y - Weighted average of the frequency components to obtain fBodyGyro.mean...Y.  
 67 fBodyGyro.meanFreq...Z - Weighted average of the frequency components to obtain fBodyGyro.mean...Z.  
-68 fBodyAccMag.mean.. - Mean of Euclidean norm of body component of linear acceleration (gravity removed). 
-69 fBodyAccMag.std.. - Standard deviation of Euclidean norm of body component of linear acceleration (gravity removed). 
-70 fBodyAccMag.meanFreq.. - Weighted average of the frequency components to obtain fBodyAccMag.mean...Z. 
-71 fBodyBodyAccJerkMag.mean.. - Mean of Euclidean norm of body component of rate of change of linear acceleration (gravity removed). 
-72 fBodyBodyAccJerkMag.std.. - Standard deviation of Euclidean norm of body component of rate of change of linear acceleration (gravity removed). 
-73 fBodyBodyAccJerkMag.meanFreq.. - Weighted average of the frequency components to obtain fBodyBodyAccJerkMag.mean...Z. 
-74 fBodyBodyGyroMag.mean.. - Mean of Euclidean norm of body component of angular acceleration (gravity removed). 
-75 fBodyBodyGyroMag.std.. - Standard deviation of Euclidean norm of body component of angular acceleration (gravity removed). 
-76 fBodyBodyGyroMag.meanFreq.. - Weighted average of the frequency components to obtain fBodyBodyGyroMag.mean...Z. 
-77 fBodyBodyGyroJerkMag.mean.. - Mean of Euclidean norm of body component of rate of change of angular acceleration (gravity removed). 
-78 fBodyBodyGyroJerkMag.std.. - Standard deviation of Euclidean norm of body component of rate of change of angular acceleration (gravity removed). 
-79 fBodyBodyGyroJerkMag.meanFreq.. - Weighted average of the frequency components to obtain fBodyBodyGyroJerkMag.mean...Z. 
+68 fBodyAccMag.mean.. - Mean of Euclidean norm of body component of linear acceleration (gravity removed).  
+69 fBodyAccMag.std.. - Standard deviation of Euclidean norm of body component of linear acceleration (gravity removed).  
+70 fBodyAccMag.meanFreq.. - Weighted average of the frequency components to obtain fBodyAccMag.mean...Z.  
+71 fBodyBodyAccJerkMag.mean.. - Mean of Euclidean norm of body component of rate of change of linear acceleration (gravity removed).  
+72 fBodyBodyAccJerkMag.std.. - Standard deviation of Euclidean norm of body component of rate of change of linear acceleration (gravity removed).  
+73 fBodyBodyAccJerkMag.meanFreq.. - Weighted average of the frequency components to obtain fBodyBodyAccJerkMag.mean...Z.  
+74 fBodyBodyGyroMag.mean.. - Mean of Euclidean norm of body component of angular acceleration (gravity removed).  
+75 fBodyBodyGyroMag.std.. - Standard deviation of Euclidean norm of body component of angular acceleration (gravity removed).  
+76 fBodyBodyGyroMag.meanFreq.. - Weighted average of the frequency components to obtain fBodyBodyGyroMag.mean...Z.  
+77 fBodyBodyGyroJerkMag.mean.. - Mean of Euclidean norm of body component of rate of change of angular acceleration (gravity removed).  
+78 fBodyBodyGyroJerkMag.std.. - Standard deviation of Euclidean norm of body component of rate of change of angular acceleration (gravity removed).  
+79 fBodyBodyGyroJerkMag.meanFreq.. - Weighted average of the frequency components to obtain fBodyBodyGyroJerkMag.mean...Z.  
 
 #### Angles
-80 angle.tBodyAccMean.gravity. - Mean angle between body component and gravity component of linear acceleration.
-81 angle.tBodyAccJerkMean..gravityMean. - Mean angle between body component of rate of change of linear acceleration and gravity component of linear acceleration.
-82 angle.tBodyGyroMean.gravityMean. - Mean angle between body component of angular acceleration and gravity component of linear acceleration.
-83 angle.tBodyGyroJerkMean.gravityMean. - Mean angle between body component of rate of change of angular acceleration and gravity component of linear acceleration.
+80 angle.tBodyAccMean.gravity. - Mean angle between body component and gravity component of linear acceleration.  
+81 angle.tBodyAccJerkMean..gravityMean. - Mean angle between body component of rate of change of linear acceleration and gravity component of linear acceleration.  
+82 angle.tBodyGyroMean.gravityMean. - Mean angle between body component of angular acceleration and gravity component of linear acceleration.  
+83 angle.tBodyGyroJerkMean.gravityMean. - Mean angle between body component of rate of change of angular acceleration and gravity component of linear acceleration.  
 84 angle.X.gravityMean. - Mean angle between gravity component of linear acceleration and the X-direction.  
 85 angle.Y.gravityMean. - Mean angle between gravity component of linear acceleration and the Y-direction.  
 86 angle.Z.gravityMean. - Mean angle between gravity component of linear acceleration and the Z-direction.  
