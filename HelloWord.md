@@ -1,3 +1,0 @@
-## Columns
-
-### Time Domain

@@ -1,14 +1,14 @@
 ### Columns
 
 #### Time Domain
-##### The following columns contain data in the time domain. Each has a corresponding column in the frequency domain.
-1 tBodyAcc.mean...X - Mean of body component of acceleration (gravity removed) in the X-direction.
-2 tBodyAcc.mean...Y - Mean of body component of acceleration (gravity removed) in the Y-direction.
-3 tBodyAcc.mean...Z - Mean of body component of acceleration (gravity removed) in the Z-direction.
-4 tBodyAcc.std...X - Standard deviation of body component of acceleration (gravity removed) in the X-direction.
-5 tBodyAcc.std...Y - Standard deviation of body component of acceleration (gravity removed) in the Y-direction.
-6 tBodyAcc.std...Z - Standard deviation of body component of acceleration (gravity removed) in the Z-direction.
-7 tGravityAcc.mean...X - Mean of gravity component of acceleration in the X-direction.
+##### The following columns contain data in the time domain. Each has a corresponding column in the frequency domain.  
+1 tBodyAcc.mean...X - Mean of body component of acceleration (gravity removed) in the X-direction.  
+2 tBodyAcc.mean...Y - Mean of body component of acceleration (gravity removed) in the Y-direction.  
+3 tBodyAcc.mean...Z - Mean of body component of acceleration (gravity removed) in the Z-direction.  
+4 tBodyAcc.std...X - Standard deviation of body component of acceleration (gravity removed) in the X-direction.  
+5 tBodyAcc.std...Y - Standard deviation of body component of acceleration (gravity removed) in the Y-direction.  
+6 tBodyAcc.std...Z - Standard deviation of body component of acceleration (gravity removed) in the Z-direction.  
+7 tGravityAcc.mean...X - Mean of gravity component of acceleration in the X-direction.  
 8 tGravityAcc.mean...Y
 9 tGravityAcc.mean...Z
 10 tGravityAcc.std...X
