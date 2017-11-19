@@ -5,7 +5,7 @@ output: html_notebook
 
 **Rationalisation**: *Global Clustering of Countries by Culture – An Extension of the GLOBE Study* &mdash; [http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2189904](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2189904)
 
-###Columns
+#Columns
 
 ####Time Domain
 #####The following columns contain data in the time domain. Each has a corresponding column in the frequency domain.
