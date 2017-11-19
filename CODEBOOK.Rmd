@@ -1,3 +1,7 @@
+## Codebook
+
+This codebook describes the columns in the file output by run_analysis.R. Except for SubjectID and Activity, all features are normalized to the range [-1,1]. 
+
 ### Columns
 
 #### Time Domain
