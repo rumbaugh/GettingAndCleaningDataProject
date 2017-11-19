@@ -1,4 +1,4 @@
-run_analysis <- function(UCIdatasetpath = './UCI HAR Dataset'){
+run_analysis <- function(outputfile, mean_outputfile, UCIdatasetpath = './UCI HAR Dataset'){
     ## First, load activities key file
     activities_key_df <- read.table(paste(UCIdatasetpath, '/activity_labels.txt', sep = ''), col.names = c('ActivityID', 'Activity'))
     ## Load file containing feature names
@@ -38,10 +38,32 @@ run_analysis <- function(UCIdatasetpath = './UCI HAR Dataset'){
     test_df <- load_features('test')
     train_df <- load_features('train')
     df <- rbind(test_df, train_df)
-}
 
-write_analysis <- function(outputfile, UCIdatasetpath = './UCI HAR Dataset'){
-    ## Run run_analysis and write the output data frame to a file
-    outdf <- run_analysis(UCIdatasetpath = UCIdatasetpath)
-    write.table(outdf, outputfile, row.names = F)
+    ## Get list of subjects
+    subjects <- unique(df$SubjectID)
+    ## Set up data.frame for mean values. Needs to be empty to begin.
+    if (exists('mean_df')) rm(mean_df)
+    ## Loop through subjects and the 6 activities
+    for (subject in subjects) {
+        for (activity in c('STANDING', 'SITTING', 'LAYING', 'WALKING', 'WALKING_DOWNSTAIRS', 'WALKING_UPSTAIRS')) {
+	    ## Pick out the columns to average
+	    mean_vector <- apply(df[, 1:(dim(df)[2]-2)], 2, mean)
+	    if (!exists('mean_df')) {
+	        ## If mean_df hasn't been created yet, initialize it
+		## with the first row
+	        mean_df <- data.frame(rbind(mean_vector))
+	    } else {
+	        ## Calculate mean of each column (except SubjectID
+		## and Activity) and add the row to mean_df
+	        mean_df <- data.frame(rbind(mean_df, mean_vector))
+	    }
+        }
+    }
+    ## Add SubjectID and Activity columns to mean_df
+    mean_df$SubjectID <- rep(subjects, each = 6)
+    mean_df$Activity <- rep(c('STANDING', 'SITTING', 'LAYING', 'WALKING', 'WALKING_DOWNSTAIRS', 'WALKING_UPSTAIRS'), length(subjects))
+
+    ## Write the output data frames to the specified files
+    write.table(df, outputfile, row.names = F)
+    write.table(mean_df, mean_outputfile, row.names = F)
 }

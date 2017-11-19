@@ -1,3 +1,5 @@
 This code takes the UCI HAR Dataset and cleans it up into a tidy dataset. To run the code, the dataset must be already downloaded and the directory structure preserved. 
 
-run_analysis.R takes the path to the UCI HAR Dataset directory as input. It merges the test and training samples into one sample, selects a subset of the features, and writes the output dataframe to a file. The features chosen are only those corresponding to a mean or standard deviation, plus the numeric ID identifying the subject, and the activity the subject was undertaking. Descriptions of the columns in the ouput file are given in CODEBOOK.Rmd. 
+run_analysis.R takes the path to the UCI HAR Dataset directory as input. It merges the test and training samples into one sample, selects a subset of the features, and writes the output dataframe to a file. The features chosen are only those corresponding to a mean or standard deviation, plus the numeric ID identifying the subject, and the activity the subject was undertaking. The script also averages the columns, except for subject ID and activity, for each subject and each activity and outputs the results to a separate file.
+
+Descriptions of the columns in the ouput files are given in CODEBOOK.Rmd. 
